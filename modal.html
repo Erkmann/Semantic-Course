@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Modal</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	</head>
+	<body>
+		<div class="ui container">
+			 <div id="deleteModal" class="ui modal">
+			 	<i class="close icon"></i>
+			 	<div class="header">WARNING!</div>
+			 	<div class="content">
+			 		This will delete all of your pesonal data.
+			 	</div>
+			 	<div class="actions">
+			 		<div class="ui inverted button">Yes</div>
+			 		<div class="ui green inverted  button">Cancel</div>
+			 	</div>
+			 </div>
+
+			<div id="delete" class="ui basic massive button">Delete My Account</div>
+
+		</div>
+		<script>
+			$('#delete').click(function(){
+				$('#deleteModal').modal('show');
+			});
+		</script>
+	</body>
+</html>
